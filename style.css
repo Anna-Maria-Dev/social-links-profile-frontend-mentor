@@ -1,0 +1,94 @@
+/* =======================================
+1. Schriftarten &  BodyStyle
+======================================= */
+/* Schriftarten einfügen und definieren */
+@font-face {
+    font-family: 'Inter';
+    src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf) format('truetype');
+    font-weight: 400 700;
+    font-style: normal;
+    
+}
+body{
+    background-color: hsl(0, 0%, 8%);
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: hsl(0, 0%, 100%);
+}
+
+/* =======================================
+2. Personal-Karte
+======================================= */
+/* Bestimmung größe der Personal-Karte + Zentrierung + Farbe der Karte*/
+.personal-card{
+    max-width: 310px;
+    width: 100%;
+    border-radius: 12px;
+    padding: 40px;
+    margin: 80px auto;
+    text-align: center;
+    background-color: hsl(0, 0%, 12%);
+}
+/* =======================================
+3. Überschriften 
+======================================= */
+/* Gestalten der Überschrift mit Größe, Farbe und Dicke */
+.personal-card h1{
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+.personal-card h2{
+    font-size: 14px;
+    font-weight: 700;
+    color: hsl(75, 94%, 57%);
+    margin-bottom: 24px;
+}
+.personal-card p{
+    font-size: 14px;
+    color: hsl(0, 0%, 80%);
+    margin-bottom: 24px;
+}
+
+/* =======================================
+4. Bild 
+======================================= */
+/* Größe des Bildes anpassen und rundung anpassen*/
+.personal-card img {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* =======================================
+4. Linktree erstellen / Umstellen und Gestalten 
+======================================= */
+/* mit diyplay:flex den Linktree gestalten und einen hover effekt einsetzen */
+.linktree{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.linktree a{
+    background-color: hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.linktree a:hover{
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 8%);
+}
+/* =======================================
+5. Credits
+======================================= */
+.attribution { font-size: 0.6875rem; text-align: center; }
+.attribution a { 
+    color: hsl(0, 0%, 100%); 
+}
